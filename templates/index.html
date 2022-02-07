@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheForecastInfo</title>
+
+    <!-- CSS Content -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Varela+Round"
+    />
+
+    <!-- Scripts -->
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="container">
+        <h1>The Forecast</h1>
+        <div class="menu">
+          <a href="#" class="is-active">Home</a>
+          <a href="#">About</a>
+          <a href="#">WeatherAPI</a>
+          <a class="status">Online</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+
+  <!-- Weather Info data -->
+  <form method="post" class="form-inline">
+    {% csrf_token %}
+    <div class="form-group mb-2">
+      <input
+        type="text"
+        class="form-control"
+        name="city"
+        placeholder="Choose a city..."
+      />
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+    
+  </form>
+
+  <!-- Grabbing data from api request -->
+  <div class="box">
+    {% if country_code and temp and pressure and humidity %}
+    <div>
+
+        <img
+            src="http://openweathermap.org/img/w/{{icon}}.png"
+            alt="Img unavailable"
+            style="width: 70px"
+          />
+        <h4>
+        <hr style="width: 100%;">
+          <span class="badge badge-primary">Country:</span> {{ country_code }}
+        </h4>
+        <h4><span class="badge badge-primary">Temperature:</span>{{ temp }}</h4>
+        <h4>
+          <span class="badge badge-primary">Pressure:</span>{{ pressure }}
+        </h4>
+        <h4>
+          <span class="badge badge-primary">Humidity:</span>{{ humidity }}
+        </h4>
+        <h4>
+          <span class="badge badge-primary">Description:</span>{{ description }}
+        </h4>
+      </div>
+    {% endif %}
+  </div>
+</html>
