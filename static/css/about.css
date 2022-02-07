@@ -112,7 +112,7 @@ hr {
 
 @media (max-width: 300px){
   .title-box{
-    width: 100%;
+    padding-right: 100px;
   }
   .menu a:nth-of-type(2n) {
     display: none;
