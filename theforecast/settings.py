@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-(5$kgjw*km&mm94+!zst)2s!@u4wd5a3++*g^)%3&tijo&vi5r
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['theforecast.info','www.theofrecast.info']
 
 
 # Application definition
