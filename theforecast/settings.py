@@ -24,9 +24,9 @@ IMG_DIR = Path(BASE_DIR, 'static')
 SECRET_KEY = 'django-insecure-(5$kgjw*km&mm94+!zst)2s!@u4wd5a3++*g^)%3&tijo&vi5r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['theforecast.info','www.theofrecast.info']
+ALLOWED_HOSTS = ['theforecast.info','www.theofrecast.info','forecastinfo.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
