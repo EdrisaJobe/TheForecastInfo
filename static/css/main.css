@@ -106,6 +106,15 @@ nav {
     }
 }
 
+.copyright{
+  font-family: "Varela Round", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: center;
+  color: white;
+  margin-top: 10px;
+
+}
+
 
 /* Smartphone resolution */
 @media (max-width: 600px){

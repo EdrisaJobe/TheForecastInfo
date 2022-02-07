@@ -83,6 +83,7 @@ hr {
   color: gold;
 }
 
+
 /* Ipad screen resolution */
 @media (max-width: 1000px) {
   .menu {
@@ -113,8 +114,12 @@ hr {
 @media (max-width: 300px){
   .title-box{
     padding-right: 100px;
+
   }
   .menu a:nth-of-type(2n) {
     display: none;
+  }
+  p{
+    padding-right: 10px;
   }
 }
