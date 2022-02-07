@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//fonts.googleapis.com/css?family=Varela+Round"
+    />
+    <link rel='shortcut icon' type='image/png' href='{% static "images/fav.png" %}'>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <div class="container">
+        <h1>The Forecast</h1>
+        <div class="menu">
+          <a href="/">Home</a>
+          <a href="/about" class="is-active">About</a>
+          <a href="https://openweathermap.org/api">WeatherAPI</a>
+          <a id="status">Online</a>
+        </div>
+      </div>
+    </nav>
+  </body>
+
+  <br>
+  <div class="title-box">
+    <h3>About this website</h3>
+    <hr />
+    <p>
+      This website is simply used to check weather conditions from any country
+      or state.
+      <em class="specific"
+        >I do not and will NOT in the future collect any user information</em
+      >
+      as I'm huge on transparency and making people feel at ease. The main
+      purpose of making this site is to showcase my ability to render an API and
+      retrieve crucial data that can then be viewed by anyone. This site is
+      meant to be a simply way to search ofr weatehr conditions with ease and
+      plans on staying that way, nothing too fancy just a simple site with
+      weather data.
+    </p>
+  </div>
+</html>
