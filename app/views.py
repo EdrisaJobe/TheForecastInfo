@@ -5,7 +5,6 @@ import http
 
 # Create your views here.
 
-
 def index(request):
 
     # grabbing api from OpenWeather
@@ -30,3 +29,9 @@ def index(request):
         data = {}
 
     return render(request, 'index.html', data)
+
+# about page
+
+def about(request):
+    
+    return render(request, 'about.html')

@@ -1,0 +1,123 @@
+body {
+  background: linear-gradient(
+    0deg,
+    rgba(114, 242, 255, 1) 0%,
+    rgba(89, 184, 255, 1) 100%
+  );
+  width: 100%;
+  height: 200vh;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+h1 {
+  font-family: "Varela Round", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  margin: 30px;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  font-family: "Varela Round", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+  margin: 0 16px;
+  padding: 16px 16px;
+  border-radius: 99px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.menu a.is-active {
+  background-color: rgba(0, 152, 223, 0.932);
+}
+
+.menu a:hover {
+  color: rgba(109, 209, 255, 0.932);
+}
+
+.title-box {
+  font-family: "Varela Round", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+  padding: 30px 100px 30px 100px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 10px black;
+  margin-left: 50px;
+  margin-right: 50px;
+  border-radius: 8px;
+}
+
+#status {
+  background-color: #47c652;
+  position: relative;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 0px 5px rgb(166, 253, 171);
+}
+
+hr {
+  width: 30%;
+}
+
+.specific {
+  color: gold;
+}
+
+
+/* Ipad screen resolution */
+@media (max-width: 1000px) {
+  .menu {
+    padding: 30px 30px;
+  }
+  .menu a:nth-of-type(1) {
+    display: flex;
+  }
+  h1 {
+    padding-top: 30px;
+  }
+}
+
+/* Smartphone resolution */
+@media (max-width: 600px) {
+  .menu a:nth-of-type(2n) {
+    display: none;
+  }
+  h1 {
+    padding-top: 15px;
+  }
+  body{
+    overflow-y: scroll;
+  }
+
+}
+
+@media (max-width: 300px){
+  .title-box{
+    padding-right: 100px;
+
+  }
+  .menu a:nth-of-type(2n) {
+    display: none;
+  }
+
+}

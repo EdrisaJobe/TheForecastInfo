@@ -21,7 +21,12 @@
       href="//fonts.googleapis.com/css?family=Varela+Round"
     />
 
+    <!-- Favicon -->
+    <link rel='shortcut icon' type='image/png' href='{% static "images/fav.png" %}'>
+
     <!-- Scripts -->
+    <script src="{% static 'scripts/script.js' %}" defer></script>
+
   </head>
   <body>
     <!-- Navigation bar -->
@@ -30,9 +35,9 @@
         <h1>The Forecast</h1>
         <div class="menu">
           <a href="#" class="is-active">Home</a>
-          <a href="#">About</a>
-          <a href="#">WeatherAPI</a>
-          <a class="status">Online</a>
+          <a href="/about">About</a>
+          <a href="https://openweathermap.org/api">WeatherAPI</a>
+          <a id="status">Online</a>
         </div>
       </div>
     </nav>
@@ -46,7 +51,7 @@
         type="text"
         class="form-control"
         name="city"
-        placeholder="Choose a city..."
+        placeholder="Enter a city..."
       />
       <button type="submit" class="btn btn-primary">Search</button>
     </div>
@@ -67,6 +72,7 @@
         <hr style="width: 100%;">
           <span class="badge badge-primary">Country:</span> {{ country_code }}
         </h4>
+<<<<<<< HEAD
         <h4>
             <span class="badge badge-primary">Lat/Long:</span> {{ lat_long }}
           </h4>
@@ -74,6 +80,10 @@
           <span class="badge badge-primary">Temperature:</span> {{ temp }}
         </h4>
         <h4>
+=======
+        <h4><span class="badge badge-primary">Temperature:</span> {{ temp }}</h4>
+        <h4>
+>>>>>>> ed5eec0649321c80c97de3b1d73d5c9d950e1234
           <span class="badge badge-primary">Pressure:</span> {{ pressure }}
         </h4>
         <h4>
@@ -84,5 +94,12 @@
         </h4>
       </div>
     {% endif %}
+  </div>
+
+  <!-- Copyright -->
+  <div class='copyright'>
+    <center>
+      <p>© 2022 TheForecastInfo</p>
+    </center>
   </div>
 </html>

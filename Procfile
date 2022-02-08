@@ -1,0 +1,1 @@
+web: gunicorn theforecast.wsgi --log-file -
