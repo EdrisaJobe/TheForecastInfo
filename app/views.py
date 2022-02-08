@@ -19,8 +19,8 @@ def index(request):
             "country_code": str(data_list['sys']['country']),
             "name": str(data_list['name']),
             "temp": str(data_list['main']['temp']) + ' °F',
-            "humidity": str(data_list['main']['humidity']),
-            "pressure": str(data_list['main']['pressure']),
+            "humidity": str(data_list['main']['humidity']) + ' %',
+            "pressure": str(data_list['main']['pressure']) + ' hPa',
             "main": str(data_list['weather'][0]['main']),
             "description": str(data_list['weather'][0]['description']),
             "icon": data_list['weather'][0]['icon'] # image, str not needed
