@@ -119,7 +119,5 @@ hr {
   .menu a:nth-of-type(2n) {
     display: none;
   }
-  p{
-    padding-right: 10px;
-  }
+
 }
