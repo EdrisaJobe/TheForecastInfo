@@ -86,6 +86,13 @@ nav {
     padding-bottom: 50px;
 }
 
+p{
+    font-family: "Varela Round", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600px;
+}
+
 
 /* Ipad screen resolution */
 @media (max-width: 1000px){
