@@ -67,15 +67,20 @@
         <hr style="width: 100%;">
           <span class="badge badge-primary">Country:</span> {{ country_code }}
         </h4>
-        <h4><span class="badge badge-primary">Temperature:</span>{{ temp }}</h4>
         <h4>
-          <span class="badge badge-primary">Pressure:</span>{{ pressure }}
+            <span class="badge badge-primary">Lat/Long:</span> {{ lat_long }}
+          </h4>
+        <h4>
+          <span class="badge badge-primary">Temperature:</span> {{ temp }}
         </h4>
         <h4>
-          <span class="badge badge-primary">Humidity:</span>{{ humidity }}
+          <span class="badge badge-primary">Pressure:</span> {{ pressure }}
         </h4>
         <h4>
-          <span class="badge badge-primary">Description:</span>{{ description }}
+          <span class="badge badge-primary">Humidity:</span> {{ humidity }}
+        </h4>
+        <h4>
+          <span class="badge badge-primary">Description:</span> {{ description }}
         </h4>
       </div>
     {% endif %}
