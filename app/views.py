@@ -17,6 +17,7 @@ def index(request):
         # var that renders everything on html page
         data = {
             "country_code": str(data_list['sys']['country']),
+            "name": str(data_list['name']),
             "temp": str(data_list['main']['temp']) + ' °C',
             "humidity": str(data_list['main']['humidity']),
             "pressure": str(data_list['main']['pressure']),
